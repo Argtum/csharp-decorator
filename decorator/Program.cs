@@ -1,4 +1,7 @@
 ﻿using System;
+using decorator.Beverage.Coffee;
+using decorator.Beverage.Tea;
+using decorator.Condiment;
 
 namespace decorator
 {
@@ -6,7 +9,11 @@ namespace decorator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Oolong tea = new Oolong();
+            Lemon lemon = new Lemon(tea, 1);
+            IceCubes drink = new IceCubes(lemon, 2);
+
+            Console.WriteLine(drink.GetDescription() + " costs: " + drink.GetCost());
         }
     }
 }
