@@ -11,14 +11,8 @@ namespace decorator.Condiment
             _quantity = quantity;
         }
 
-        protected override double GetCondimentCost()
-        {
-            return 10.0 * _quantity;
-        }
+        protected override double GetCondimentCost() => 10.0 * _quantity;
 
-        protected override string GetCondimentDescription()
-        {
-            return "Lemon x " + _quantity;
-        }
+        protected override string GetCondimentDescription() => "Lemon x " + _quantity;
     }
 }

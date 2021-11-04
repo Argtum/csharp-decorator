@@ -19,14 +19,8 @@ namespace decorator.Condiment
             _type = type;
         }
 
-        protected override string GetCondimentDescription()
-        {
-            return _type == IceCubeType.Dry ? "Dry" : "Water" + " ice cubes x " + _quantity;
-        }
-        
-        protected override double GetCondimentCost()
-        {
-            return _type == IceCubeType.Dry ? 10 : 5 * _quantity;
-        }
+        protected override string GetCondimentDescription() => _type == IceCubeType.Dry ? "Dry" : "Water" + " ice cubes x " + _quantity;
+
+        protected override double GetCondimentCost() => _type == IceCubeType.Dry ? 10 : 5 * _quantity;
     }
 }

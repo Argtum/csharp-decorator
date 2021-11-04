@@ -12,16 +12,11 @@ namespace decorator.Condiment
         }
 
         protected abstract string GetCondimentDescription();
+        
         protected abstract double GetCondimentCost();
 
-        public string GetDescription()
-        {
-            return _beverage.GetDescription() + ", " + GetCondimentDescription();
-        }
+        public string GetDescription() => _beverage.GetDescription() + ", " + GetCondimentDescription();
 
-        public double GetCost()
-        {
-            return _beverage.GetCost() + GetCondimentCost();
-        }
+        public double GetCost() => _beverage.GetCost() + GetCondimentCost();
     }
 }

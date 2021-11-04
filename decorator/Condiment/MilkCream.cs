@@ -6,14 +6,8 @@ namespace decorator.Condiment
     {
         public MilkCream(IBeverage beverage) : base(beverage) {}
 
-        protected override double GetCondimentCost()
-        {
-            return 25;
-        }
+        protected override double GetCondimentCost() => 25;
 
-        protected override string GetCondimentDescription()
-        {
-            return "Milk cream";
-        }
+        protected override string GetCondimentDescription() => "Milk cream";
     }
 }

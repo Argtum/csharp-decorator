@@ -4,9 +4,6 @@ namespace decorator.Beverage.Coffee
     {        
         public DoubleCappuccino() : base("Double cappuccino") {}
 
-        public override double GetCost()
-        {
-            return 120;
-        }
+        public override double GetCost() => 120;
     }
 }

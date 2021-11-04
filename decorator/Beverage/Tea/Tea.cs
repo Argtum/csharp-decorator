@@ -4,9 +4,6 @@ namespace decorator.Beverage.Tea
     {
         public Tea(string description = "Tea") : base(description) {}
 
-        public override double GetCost()
-        {
-            return 30;
-        }
+        public override double GetCost() => 30;
     }
 }

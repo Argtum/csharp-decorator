@@ -12,14 +12,8 @@ namespace decorator.Condiment
             _quantity = MaxQuantity < quantity ? MaxQuantity : quantity;
         }
 
-        protected override double GetCondimentCost()
-        {
-            return 10.0 * _quantity;
-        }
+        protected override double GetCondimentCost() => 10.0 * _quantity;
 
-        protected override string GetCondimentDescription()
-        {
-            return "Сhocolate x " + _quantity;
-        }
+        protected override string GetCondimentDescription() => "Сhocolate x " + _quantity;
     }
 }

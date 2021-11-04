@@ -17,14 +17,8 @@ namespace decorator.Condiment
             _type = type;
         }
 
-        protected override string GetCondimentDescription()
-        {
-            return _type == LiquorType.Nut ? "Nut" : "Chocolate" + " liquor";
-        }
-    
-        protected override double GetCondimentCost()
-        {
-            return 50;
-        }
+        protected override string GetCondimentDescription() => _type == LiquorType.Nut ? "Nut" : "Chocolate" + " liquor";
+
+        protected override double GetCondimentCost() => 50;
     }
 }

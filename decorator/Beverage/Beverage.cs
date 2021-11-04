@@ -9,10 +9,7 @@ namespace decorator.Beverage
             _description = description;
         }
 
-        public string GetDescription()
-        {
-            return _description;
-        }
+        public string GetDescription() => _description;
 
         public abstract double GetCost();
     }

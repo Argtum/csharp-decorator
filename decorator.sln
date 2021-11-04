@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "decorator", "decorator\decorator.csproj", "{DF3A5D8F-7509-4751-93F9-5189A9F4DFAF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{4FAC3809-037B-4267-A5D0-66E1D14F5F9E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{DF3A5D8F-7509-4751-93F9-5189A9F4DFAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF3A5D8F-7509-4751-93F9-5189A9F4DFAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF3A5D8F-7509-4751-93F9-5189A9F4DFAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FAC3809-037B-4267-A5D0-66E1D14F5F9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FAC3809-037B-4267-A5D0-66E1D14F5F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FAC3809-037B-4267-A5D0-66E1D14F5F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FAC3809-037B-4267-A5D0-66E1D14F5F9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

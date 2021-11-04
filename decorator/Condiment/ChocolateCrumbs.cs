@@ -11,14 +11,8 @@ namespace decorator.Condiment
             _mass = mass;
         }
 
-        protected override double GetCondimentCost()
-        {
-            return 2.0 * _mass;
-        }
+        protected override double GetCondimentCost() => 2.0 * _mass;
 
-        protected override string GetCondimentDescription()
-        {
-            return "Chocolate crumbs " + _mass + "g";
-        }
+        protected override string GetCondimentDescription() => "Chocolate crumbs " + _mass + "g";
     }
 }

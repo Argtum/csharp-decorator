@@ -4,9 +4,6 @@ namespace decorator.Beverage.Milkshake
     {
         public SmallMilkshake() : base("small Milkshake") {}
 
-        public override double GetCost()
-        {
-            return 50;
-        }
+        public override double GetCost() => 50;
     }
 }
